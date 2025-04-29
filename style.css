@@ -1,0 +1,100 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/photo-fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos do container */
+.container {
+    background-color: #01020e;
+    box-shadow: 0 0 10px #efe9d5;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilos da foto de perfil */
+.perfil-img {
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid #101010;
+    box-shadow: 0 0 10px #efe9d5;
+}
+
+/* Estilos de links */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 7px;
+    border-radius: 30px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: transparent;
+    box-shadow: 0 0 10px #efe9d5;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.link:hover {
+    background-color: #efe9d5;
+    cursor: pointer;
+}
+
+.link p {
+    color: #efe9d5;
+    font-weight: bold;
+}
+
+.link:hover p {
+    color: #040624;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+/* Estilos de imagens */
+.img-link {
+    width: 30px;
+    object-fit: cover;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 40%;
+    box-shadow: 0 0 10px #efe9d5;
+    background-color: #efe9d5;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.img-link:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    .my-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .img-link {
+        width: 40px;
+    }
+}
